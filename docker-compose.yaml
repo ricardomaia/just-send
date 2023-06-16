@@ -1,0 +1,19 @@
+version: '3'
+services:
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: php_container
+    restart: always
+    image: php_container
+    environment:
+      - APACHE_LOG_DIR=/var/log/apache2
+    volumes:
+      - ./src:/var/www/html
+      - ./log:/var/log/apache2
+      - ./uploads:/var/www/uploads
+    ports:
+    - 80:80
+
+
