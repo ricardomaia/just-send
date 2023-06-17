@@ -22,6 +22,6 @@ if (isset($_FILES['files']) && !empty($_FILES['files'])) {
         file_put_contents($target_dir . $batch_id . '-DESCRIPTION' . '.txt', $description);
     }
 
-    echo '<div class="alert alert-success" role="alert"><span class="glyphicon glyphicon-ok"></span> Envio completo!</div>';
-    echo '<a href="index.php" class="btn btn-lg btn-link"><span class="glyphicon glyphicon-repeat"></span> Recomeçar</a>';
+    echo '<div class="alert alert-success" role="alert"><i class="fa-solid fa-circle-check"></i> Envio completo!</div>';
+    echo '<a href="index.php" class="btn btn-lg btn-link"><i class="fa-solid fa-repeat"></i> Recomeçar</a>';
 }

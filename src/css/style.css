@@ -11,6 +11,20 @@ body {
   background-color: #222;
 }
 
+.upload-form input[type="file"] {
+  appearance: none;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.upload-form h3 {
+  text-align: center;
+  color: #0461ad;
+}
+
 .upload-form {
   border-radius: 10px;
   display: flex;
@@ -23,24 +37,20 @@ body {
 }
 
 .upload-form label {
-  display: flex;
-  flex-flow: column;
+  display: block;
+  width: 100%;
+  text-align: center;
   justify-content: center;
   align-items: center;
   background-color: #fafbfb;
   border: 1px solid #e6e8ec;
   color: #737476;
-  padding: 10px 12px;
-  font-weight: 500;
-  font-size: 14px;
-  margin: 10px 0;
+  padding: 15px 12px;
+  margin: 5px 0;
   border-radius: 4px;
   cursor: pointer;
-}
-
-.upload-form label i {
-  margin-right: 10px;
-  padding: 5px 0;
+  font-weight: 600;
+  font-size: 17px;
 }
 
 .upload-form label span {
@@ -48,30 +58,24 @@ body {
   justify-content: center;
   word-break: break-all;
   text-align: left;
-}
-
-.upload-form input[type="file"] {
-  appearance: none;
-  visibility: hidden;
-  height: 0;
-  width: 0;
-  padding: 0;
-  margin: 0;
-}
-
-.upload-form textarea {
-  border: 1px solid #e6e8ec;
-  border-radius: 4px;
-  padding: 10px 12px;
-  font-size: 14px;
-  resize: none;
-  margin: 10px 0;
-  min-height: 60px;
+  display: block;
+  white-space: pre;
 }
 
 .upload-form .progress {
   display: none;
 }
-.upload-form .result {
-  padding-top: 15px;
+
+.text-left {
+  text-align: left !important;
+}
+
+.input-group {
+  margin: 10px 0;
+}
+
+.result {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
 }
